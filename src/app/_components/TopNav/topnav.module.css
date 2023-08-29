@@ -1,0 +1,48 @@
+.top_nav{
+    height: 80px;
+    max-width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+}
+.nav_links{
+    display: flex;
+    grid-column-gap: 35px;
+}
+.nav_links > a{
+    position: relative;
+  }
+
+.nav_links > a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: -2px;
+    content: "";
+    display: block;
+    height: 1.25px;
+    left: 50%;
+    position: absolute;
+    background: #000000;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  .nav_links > a:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+
+@media screen and (max-width: 479px){
+  .top_nav{
+    height: 75px;
+}
+}
+
+@media screen and (max-width: 991px){
+    .top_nav{
+    height: 90px;
+}
+}

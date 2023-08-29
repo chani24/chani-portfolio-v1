@@ -1,0 +1,30 @@
+.footer{
+  max-width: 100%;
+  padding-top: 235px;
+  padding-bottom: 25px;
+  overflow: hidden;
+}
+
+.nav_links{
+    display: flex;
+    justify-content: space-between;
+}
+.nav_links > a{
+    position: relative;
+  }
+  .nav_links > a:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+
+@media screen and (max-width: 479px){
+  .top_nav{
+    height: 75px;
+}
+}
+
+@media screen and (max-width: 991px){
+    .top_nav{
+    height: 90px;
+}
+}
