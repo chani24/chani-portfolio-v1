@@ -2,3 +2,11 @@
     margin-top: 75px;
     margin-bottom: 30px;
 }
+
+.section_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid #000000;
+}

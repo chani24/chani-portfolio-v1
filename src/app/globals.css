@@ -58,7 +58,7 @@
 }
 
 
-body {
+body, .scroll-container {
   color: var(--foreground);
   background: var(--background);
   font-family: Switzer, sans-serif;
@@ -89,15 +89,26 @@ body {
 .text-light{
   color: #696969;
 }
+
+.scroll-container {
+  position: fixed;
+  top: 80px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  will-change: transform;
+}
+
+
 @media screen and (max-width: 479px){
-  body{
+  body.scroll-container{
   padding-left: 10px;
   padding-right: 10px;
 }
 }
 
 @media screen and (max-width: 991px){
-  body{
+  body, .scroll-container{
   padding-left: 30px;
   padding-right: 30px;
 }
