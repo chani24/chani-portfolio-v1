@@ -1,5 +1,3 @@
-'use client'
-
 import SmoothScroll from "./_components/SmoothScroll"
 import './globals.css'
 import TopNav from './_components/TopNav/TopNav';
