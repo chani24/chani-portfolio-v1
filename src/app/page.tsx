@@ -5,6 +5,14 @@ import Image from 'next/image'
 import styles from './main.module.css'
 
 const featuredProjects = [
+ {
+    title: 'Danol Partners',
+    link: '',
+  },
+  {
+    title: 'Lily Health',
+    link: '',
+  },
   {
     title: 'KNF Couture',
     link: '',
@@ -13,14 +21,7 @@ const featuredProjects = [
     title: 'Neuf Worldwide',
     link: '',
   },
-  {
-    title: 'Threshold Schools',
-    link: '',
-  },
-  {
-    title: 'Breeze Africa Web',
-    link: '',
-  },
+  
   {
     title: 'De-Fi',
     link: '',
