@@ -3,63 +3,61 @@
 @tailwind utilities;
 
 :root {
-  --foreground:  #000000;
-  --background: #FFF;
+  --foreground: #000000;
+  --background: #fff;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground: #FFF;
+    --foreground: #fff;
     --background: #000000;
   }
 }
 
 /* FONTS */
 
-
 @font-face {
-  font-family: 'Switzer';
-  src: url('/fonts/Switzer/Switzer-Regular.woff2') format('woff2'),
-       url('/fonts/Switzer/Switzer-Regular.woff') format('woff'),
-       url('/fonts/Switzer/Switzer-Regular.ttf') format('truetype');
-       font-weight: 400;
-       font-display: swap;
-       font-style: normal;
+  font-family: "Switzer";
+  src: url("/fonts/Switzer/Switzer-Regular.woff2") format("woff2"),
+    url("/fonts/Switzer/Switzer-Regular.woff") format("woff"),
+    url("/fonts/Switzer/Switzer-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: 'Switzer';
-  src: url('/fonts/Switzer/Switzer-Medium.woff2') format('woff2'),
-       url('/fonts/Switzer/Switzer-Medium.woff') format('woff'),
-       url('/fonts/Switzer/Switzer-Medium.ttf') format('truetype');
-       font-weight: 500;
-       font-display: swap;
-       font-style: normal;
+  font-family: "Switzer";
+  src: url("/fonts/Switzer/Switzer-Medium.woff2") format("woff2"),
+    url("/fonts/Switzer/Switzer-Medium.woff") format("woff"),
+    url("/fonts/Switzer/Switzer-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: 'Switzer';
-  src: url('/fonts/Switzer/Switzer-Bold.woff2') format('woff2'),
-       url('/fonts/Switzer/Switzer-Bold.woff') format('woff'),
-       url('/fonts/Switzer/Switzer-Bold.ttf') format('truetype');
-       font-weight: 700;
-       font-display: swap;
-       font-style: normal;
+  font-family: "Switzer";
+  src: url("/fonts/Switzer/Switzer-Bold.woff2") format("woff2"),
+    url("/fonts/Switzer/Switzer-Bold.woff") format("woff"),
+    url("/fonts/Switzer/Switzer-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: 'Switzer';
-  src: url('/fonts/Switzer/Switzer-Black.woff2') format('woff2'),
-       url('/fonts/Switzer/Switzer-Black.woff') format('woff'),
-       url('/fonts/Switzer/Switzer-Black.ttf') format('truetype');
-       font-weight: 900;
-       font-display: swap;
-       font-style: normal;
+  font-family: "Switzer";
+  src: url("/fonts/Switzer/Switzer-Black.woff2") format("woff2"),
+    url("/fonts/Switzer/Switzer-Black.woff") format("woff"),
+    url("/fonts/Switzer/Switzer-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-display: swap;
+  font-style: normal;
 }
 
-
-
-body, .scroll-container {
+body,
+.scroll-container {
   color: var(--foreground);
   background: var(--background);
   font-family: Switzer, sans-serif;
@@ -67,32 +65,34 @@ body, .scroll-container {
   line-height: 1.2;
   padding-left: 80px;
   padding-right: 80px;
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
+
 body::-webkit-scrollbar {
   display: none;
 }
 
-.text-small{
+.text-small {
   line-height: 1.2;
 }
-.text-medium{
+.text-medium {
   font-size: 24px;
   line-height: 1.2;
 }
-.text-large{
+.text-large {
   font-size: 36px;
   line-height: 1.2;
 }
-.text-extra-large{
+.text-extra-large {
   margin-left: -1vw;
   font-size: 13.67vw;
   font-weight: 500;
-  line-height: .88;
+  line-height: 0.88;
+  letter-spacing: -8px;
 }
 
-.text-light{
+.text-light {
   color: #696969;
 }
 
@@ -105,17 +105,17 @@ body::-webkit-scrollbar {
   will-change: transform;
 }
 
+@media screen and (max-width: 479px) {
+  body.scroll-container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
 
-@media screen and (max-width: 479px){
-  body.scroll-container{
-  padding-left: 10px;
-  padding-right: 10px;
-}
-}
-
-@media screen and (max-width: 991px){
-  body, .scroll-container{
-  padding-left: 30px;
-  padding-right: 30px;
-}
+@media screen and (max-width: 991px) {
+  body,
+  .scroll-container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
