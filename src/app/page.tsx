@@ -1,34 +1,39 @@
 "use client";
 
-import Link from "next/link";
 import Image from "next/image";
 import styles from "./main.module.css";
 
 const featuredProjects = [
   {
     title: "Danol Partners",
-    link: "",
+    link: "https://www.danolpartners.com/",
+    image: "danol",
   },
   {
     title: "Lily Health",
-    link: "",
+    link: "https://www.mylily.health/",
+    image: "lily",
   },
   {
     title: "KNF Couture",
-    link: "",
+    link: "https://wearknf.com/",
+    image: "knf",
   },
   {
     title: "Neuf Worldwide",
-    link: "",
+    link: "https://www.neuf-ww.xyz/",
+    image: "neuf",
   },
 
   {
     title: "De-Fi",
-    link: "",
+    link: "https://de-fi-mocha.vercel.app/",
+    image: "defi",
   },
   {
-    title: "Breeze Africa Dashboard",
-    link: "",
+    title: "Breeze Africa",
+    link: "https://www.breeze.africa/",
+    image: "breeze",
   },
 ];
 
@@ -78,7 +83,7 @@ export default function Home() {
         </h1>
       </div>
       <div className="h-full grid grid-cols-12 relative">
-        <div className="col-span-7 text-medium mb-[72px]">
+        <div className="col-span-12 md:col-span-7 text-medium mb-[72px]">
           I'm all about building modern frontend and fullstack web applications
           to meet performance, visual, accessibility and security standards. I'm
           based in Lagos, collaborating with clients from around the world to
@@ -89,13 +94,17 @@ export default function Home() {
         <div className={styles.section_title}>
           <h2 className="text-large">Featured projects</h2>{" "}
         </div>
-        <div className="h-full grid grid-cols-12 gap-[40px] mt-[72px]">
+        <div className="h-full grid grid-cols-2 gap-[40px] mt-[40px] md:mt-[72px]">
           {featuredProjects.map((details, index) => {
             return (
-              <div className="col-span-6 w-full" key={index}>
-                <video className={styles.projects_video} autoPlay loop muted>
-                  <source src="/videos/defi.mp4" />
-                </video>
+              <div className="col-span-2 md:col-span-1 relative" key={index}>
+                <Image
+                  alt="project thumbnail"
+                  className={styles.projects_image}
+                  src={"/images/" + details.image + ".png"}
+                  height={700}
+                  width={1200}
+                />
                 <div>
                   <a
                     className={"flex items-end " + styles.projects_link}
@@ -119,8 +128,10 @@ export default function Home() {
         </div>
       </div>
       <div className="h-full grid grid-cols-12  mt-[72px]">
-        <div className="col-span-5 text-small">Technologies I work with</div>
-        <div className="col-span-7 text-medium">
+        <div className="col-span-5 text-small  hidden md:block">
+          Technologies I work with
+        </div>
+        <div className="col-span-12 md:col-span-7 text-medium">
           I utilize React, Next.js, Webflow, and Shopify to craft user
           interfaces that are both interactive and responsive. My skill set
           extends to writing APIs using technologies such as Node.js, Nest.js,
@@ -131,7 +142,7 @@ export default function Home() {
           testing purposes.
         </div>
       </div>
-      <div>
+      <div className="mt-[60px] md:mt-0">
         <div className={styles.section_title}>
           <h2 className="text-large">Project categories</h2>{" "}
         </div>
@@ -162,7 +173,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div>
+      <div className="mt-[60px] md:mt-0">
         <div className={styles.section_title}>
           <h2 className="text-large">Articles</h2>{" "}
           <a
@@ -174,8 +185,13 @@ export default function Home() {
           </a>
         </div>
         <div className="grid grid-cols-12">
-          <div className="col-span-5"></div>
-          <div className={"col-span-7 text-medium " + styles.article_container}>
+          <div className="col-span-5  hidden md:block"></div>
+          <div
+            className={
+              "col-span-12 md:col-span-7 text-medium " +
+              styles.article_container
+            }
+          >
             {articles.map((article, index) => {
               return (
                 <a key={index} href={article.link} target="_blank">
@@ -196,8 +212,10 @@ export default function Home() {
       </div>
 
       <div className="h-full grid grid-cols-12  mt-[72px]">
-        <div className="col-span-5 text-small">Why you should hire me</div>
-        <div className="col-span-7 text-medium">
+        <div className="col-span-5 hidden md:block text-small">
+          Why you should hire me
+        </div>
+        <div className="col-span-12 md:col-span-7 text-medium">
           Hiring me brings aboard a dedicated frontend developer with a
           commitment to delivering top-tier projects. My passion for both
           excellence and timeliness fuels my work, ensuring that every project I

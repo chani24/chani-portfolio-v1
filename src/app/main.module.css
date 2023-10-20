@@ -16,13 +16,13 @@
   border-bottom: 1px solid #000000;
 }
 
-.projects_video {
+.projects_image {
   border: 1px solid #000000;
-  border-radius: 5px;
   margin-bottom: 10px;
+  object-fit: fill;
 }
 
-.projects_video:hover {
+.projects_image:hover {
   border-radius: 0;
 }
 .projects_link {
@@ -92,7 +92,7 @@
 }
 
 .article_container div {
-  padding: 24px 40px 24px 0;
+  padding: 24px 48px 24px 0;
   border-bottom: 1px solid #000000;
 }
 
@@ -109,4 +109,37 @@
 .article_container div:hover p,
 .article_container div:hover img {
   transform: translateY(-4px);
+}
+
+@media screen and (max-width: 768px) {
+  .section_title {
+    padding: 0.75rem 0;
+  }
+
+  .text_scroll_wrapper {
+    height: 80px;
+  }
+
+  .text_scroll {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+    white-space: nowrap;
+    transform: scale(1.2);
+    transition: all 1s ease;
+  }
+
+  .article_container div {
+    padding: 20px 48px 20px 0;
+  }
+
+  .article_container img {
+    position: absolute;
+    top: 24px;
+  }
 }

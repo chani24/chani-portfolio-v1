@@ -10,8 +10,6 @@ export default function TopNav() {
         </Link>
       </div>
       <div className={styles.nav_links}>
-        <Link href="/#about">About</Link>
-        <Link href="/#projects">Projects</Link>
         <a href="mailto:achidera20@gmail.com?subject=Hire Chidera Ani">
           Contact
         </a>
