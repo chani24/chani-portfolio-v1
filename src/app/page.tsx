@@ -109,16 +109,33 @@ export default function Home() {
                   <a
                     className={"flex items-end " + styles.projects_link}
                     href={details.link}
+                    target="_blank"
                   >
                     {" "}
                     <span>{details.title}</span>{" "}
                     <span>
-                      <Image
-                        alt="right arrow"
-                        height={16}
-                        width={16}
-                        src="/images/right-arrow.svg"
-                      />
+                      <svg
+                        width="800px"
+                        height="800px"
+                        viewBox="0 0 24 24"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        aria-labelledby="arrowRightTopIconTitle"
+                        stroke="#000000"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        fill="none"
+                        color="#000000"
+                      >
+                        {" "}
+                        <title id="arrowRightTopIconTitle">
+                          Arrow Right Top
+                        </title>{" "}
+                        <path d="M19 13V5h-8" />{" "}
+                        <path stroke-linecap="round" d="M19 5l-1 1" />{" "}
+                        <path d="M18 6L5 19" />{" "}
+                      </svg>
                     </span>
                   </a>
                 </div>
@@ -197,12 +214,28 @@ export default function Home() {
                 <a key={index} href={article.link} target="_blank">
                   <div className="relative">
                     <p>{article.title}</p>
-                    <Image
-                      alt="right arrow"
-                      height={20}
-                      width={20}
-                      src="/images/right-arrow.svg"
-                    />
+                    <svg
+                      width="800px"
+                      height="800px"
+                      viewBox="0 0 24 24"
+                      role="img"
+                      xmlns="http://www.w3.org/2000/svg"
+                      aria-labelledby="arrowRightTopIconTitle"
+                      stroke="#000000"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      fill="none"
+                      color="#000000"
+                    >
+                      {" "}
+                      <title id="arrowRightTopIconTitle">
+                        Arrow Right Top
+                      </title>{" "}
+                      <path d="M19 13V5h-8" />{" "}
+                      <path stroke-linecap="round" d="M19 5l-1 1" />{" "}
+                      <path d="M18 6L5 19" />{" "}
+                    </svg>
                   </div>
                 </a>
               );
