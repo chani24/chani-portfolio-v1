@@ -9,11 +9,11 @@ export const metadata: Metadata = {
     title: "Chidera Ani - Frontend developer",
     description:
       "Frontend developer skilled in building refined web experiences. With a strong design sensibility and up-to-date tech knowledge, Chidera transforms concepts into user-friendly interfaces. Their expertise results in responsive, accessible websites, backed by collaborative teamwork.",
-    url: "https://chani.dev",
+    url: "https://www.chani.dev",
     siteName: "Chidera Ani",
     images: [
       {
-        url: "https://chani.dev/images/large-og.jpg",
+        url: "https://www.chani.dev/images/large-og.jpg",
         width: 1200,
         height: 630,
       },
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     siteId: "",
     creator: "@_anichidera",
     creatorId: "",
-    images: ["https://chani.dev/images/large-og.jpg"],
+    images: ["https://www.chani.dev/images/large-og.jpg"],
   },
 };
 
