@@ -1,41 +1,36 @@
-"use client";
+import PageWrapper from "./PageWrapper";
+import { Metadata } from "next";
 
-import SmoothScroll from "./_components/SmoothScroll";
-import "./globals.css";
-import TopNav from "./_components/TopNav/TopNav";
-import Footer from "./_components/Footer/Footer";
-import LoadingScreen from "./_components/LoadingScreen/LoadingScreen";
+export const metadata: Metadata = {
+  title: "Chidera Ani - Frontend developer",
+  description:
+    "Creative frontend developer skilled in crafting captivating web experiences. With a strong design sensibility and up-to-date tech knowledge, Chidera transforms concepts into user-friendly interfaces. Their expertise results in responsive, accessible websites, backed by collaborative teamwork.",
+  openGraph: {
+    title: "Chidera Ani - Frontend developer",
+    description:
+      "Creative frontend developer skilled in crafting captivating web experiences. With a strong design sensibility and up-to-date tech knowledge, Chidera transforms concepts into user-friendly interfaces. Their expertise results in responsive, accessible websites, backed by collaborative teamwork.",
+    url: "https://chani.dev",
+    siteName: "Chidera Ani",
+    images: [
+      {
+        url: "https://chani.dev/images/large-og.jpg",
+        width: 1200,
+        height: 630,
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Chidera Ani - Frontend developer",
+    description:
+      "Creative frontend developer skilled in crafting captivating web experiences. With a strong design sensibility and up-to-date tech knowledge, Chidera transforms concepts into user-friendly interfaces. Their expertise results in responsive, accessible websites, backed by collaborative teamwork.",
+    siteId: "",
+    creator: "@_anichidera",
+    creatorId: "",
+    images: ["https://chani.dev/images/large-og.jpg"],
+  },
+};
 
-import Head from "next/head";
-
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
-  return (
-    <html lang="en">
-      <Head>
-        <title>Chidera Ani - Frontend developer</title>
-        <meta
-          property="og:title"
-          content="Chidera Ani - Frontend developer"
-          key="title"
-        />
-        <meta
-          name="description"
-          property="og:description"
-          content="Chidera Ani is a creative frontend developer skilled in crafting captivating web experiences. With a strong design sensibility and up-to-date tech knowledge, Chidera transforms concepts into user-friendly interfaces. Their expertise results in responsive, accessible websites, backed by collaborative teamwork."
-        />
-      </Head>
-      <body>
-        <TopNav />
-        <LoadingScreen />
-        <SmoothScroll>
-          {children}
-          <Footer />
-        </SmoothScroll>
-      </body>
-    </html>
-  );
-}
+export default PageWrapper;
