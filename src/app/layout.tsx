@@ -4,11 +4,11 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Chidera Ani - Frontend developer",
   description:
-    "Creative frontend developer skilled in crafting captivating web experiences. With a strong design sensibility and up-to-date tech knowledge, Chidera transforms concepts into user-friendly interfaces. Their expertise results in responsive, accessible websites, backed by collaborative teamwork.",
+    "Frontend developer skilled in building refined web experiences. With a strong design sensibility and up-to-date tech knowledge, Chidera transforms concepts into user-friendly interfaces. Their expertise results in responsive, accessible websites, backed by collaborative teamwork.",
   openGraph: {
     title: "Chidera Ani - Frontend developer",
     description:
-      "Creative frontend developer skilled in crafting captivating web experiences. With a strong design sensibility and up-to-date tech knowledge, Chidera transforms concepts into user-friendly interfaces. Their expertise results in responsive, accessible websites, backed by collaborative teamwork.",
+      "Frontend developer skilled in building refined web experiences. With a strong design sensibility and up-to-date tech knowledge, Chidera transforms concepts into user-friendly interfaces. Their expertise results in responsive, accessible websites, backed by collaborative teamwork.",
     url: "https://chani.dev",
     siteName: "Chidera Ani",
     images: [
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Chidera Ani - Frontend developer",
     description:
-      "Creative frontend developer skilled in crafting captivating web experiences. With a strong design sensibility and up-to-date tech knowledge, Chidera transforms concepts into user-friendly interfaces. Their expertise results in responsive, accessible websites, backed by collaborative teamwork.",
+      "Frontend developer skilled in building refined web experiences. With a strong design sensibility and up-to-date tech knowledge, Chidera transforms concepts into user-friendly interfaces. Their expertise results in responsive, accessible websites, backed by collaborative teamwork.",
     siteId: "",
     creator: "@_anichidera",
     creatorId: "",
