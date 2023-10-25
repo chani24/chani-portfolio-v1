@@ -3,14 +3,14 @@
 @tailwind utilities;
 
 :root {
-  --foreground: #000000;
-  --background: #fff;
+  --foreground: #222222;
+  --background: #f8f8f8;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground: #fff;
-    --background: #000000;
+    --foreground: #f8f8f8;
+    --background: #222222;
   }
 }
 
@@ -87,7 +87,7 @@ body::-webkit-scrollbar {
 .text-extra-large {
   margin-left: -1vw;
   font-size: 13.67vw;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 0.88;
   letter-spacing: -8px;
 }
