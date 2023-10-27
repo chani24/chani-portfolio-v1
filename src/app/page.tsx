@@ -122,9 +122,9 @@ export default function Home() {
                         xmlns="http://www.w3.org/2000/svg"
                         aria-labelledby="arrowRightTopIconTitle"
                         stroke="#000000"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                         fill="none"
                         color="#000000"
                       >
@@ -133,7 +133,7 @@ export default function Home() {
                           Arrow Right Top
                         </title>{" "}
                         <path d="M19 13V5h-8" />{" "}
-                        <path stroke-linecap="round" d="M19 5l-1 1" />{" "}
+                        <path strokeLinecap="round" d="M19 5l-1 1" />{" "}
                         <path d="M18 6L5 19" />{" "}
                       </svg>
                     </span>
@@ -222,9 +222,9 @@ export default function Home() {
                       xmlns="http://www.w3.org/2000/svg"
                       aria-labelledby="arrowRightTopIconTitle"
                       stroke="#000000"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                       fill="none"
                       color="#000000"
                     >
@@ -233,7 +233,7 @@ export default function Home() {
                         Arrow Right Top
                       </title>{" "}
                       <path d="M19 13V5h-8" />{" "}
-                      <path stroke-linecap="round" d="M19 5l-1 1" />{" "}
+                      <path strokeLinecap="round" d="M19 5l-1 1" />{" "}
                       <path d="M18 6L5 19" />{" "}
                     </svg>
                   </div>

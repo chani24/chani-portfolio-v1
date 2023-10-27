@@ -3,19 +3,18 @@
 @tailwind utilities;
 
 :root {
-  --foreground: #222222;
+  --foreground: #111111;
   --background: #f8f8f8;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground: #f8f8f8;
-    --background: #222222;
+    --background: #111111;
   }
 }
 
 /* FONTS */
-
 @font-face {
   font-family: "Switzer";
   src: url("/fonts/Switzer/Switzer-Regular.woff2") format("woff2"),
