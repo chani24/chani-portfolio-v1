@@ -129,7 +129,7 @@ export default function Home() {
                         color="#000000"
                       >
                         {" "}
-                        <title id="arrowRightTopIconTitle">
+                        <title>
                           Arrow Right Top
                         </title>{" "}
                         <path d="M19 13V5h-8" />{" "}
@@ -229,7 +229,7 @@ export default function Home() {
                       color="#000000"
                     >
                       {" "}
-                      <title id="arrowRightTopIconTitle">
+                      <title>
                         Arrow Right Top
                       </title>{" "}
                       <path d="M19 13V5h-8" />{" "}
