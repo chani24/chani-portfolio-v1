@@ -15,7 +15,7 @@ export default function TopNav() {
         </div>
         <div>
           <div className="text-light">Resumé</div>
-          <div><a href="https://drive.google.com/file/d/1TAeczHmFWtbHYVHQ3kLJiEY5zs9-lKHH/view?usp=sharing" target="_blank">Google drive</a></div>
+          <div><a href="https://drive.google.com/file/d/1Xh_OZmOz-4YZGx1D5eXxC6NpbXICuyNf/view?usp=sharing" target="_blank">Google drive</a></div>
         </div>
         <div>
           <div className="text-light">Github</div>
