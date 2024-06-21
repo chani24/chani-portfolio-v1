@@ -86,7 +86,7 @@ export default function Home() {
         <div className="col-span-12 md:col-span-7 text-medium mb-[72px]">
           I'm all about building modern frontend and fullstack web applications
           to meet performance, visual, accessibility and security standards. I'm
-          based in Lagos, collaborating with clients from around the world to
+          based in Ontario, collaborating with clients from around the world to
           bring high-quality and timely web projects to fruition.
         </div>
       </div>
@@ -131,8 +131,7 @@ export default function Home() {
                         {" "}
                         <title>
                           Arrow Right Top
-                        </title>{" "}
-                        <path d="M19 13V5h-8" />{" "}
+                        </title> <path d="M19 13V5h-8" />{" "}
                         <path strokeLinecap="round" d="M19 5l-1 1" />{" "}
                         <path d="M18 6L5 19" />{" "}
                       </svg>
@@ -231,8 +230,7 @@ export default function Home() {
                       {" "}
                       <title>
                         Arrow Right Top
-                      </title>{" "}
-                      <path d="M19 13V5h-8" />{" "}
+                      </title> <path d="M19 13V5h-8" />{" "}
                       <path strokeLinecap="round" d="M19 5l-1 1" />{" "}
                       <path d="M18 6L5 19" />{" "}
                     </svg>
